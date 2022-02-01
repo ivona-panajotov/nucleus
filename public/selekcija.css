@@ -1,0 +1,110 @@
+body{
+    font-size: 1.3rem
+}
+form{
+    margin: 5rem;
+    padding: 3rem;
+    background-color: rgb(104, 126, 99);
+    color: white;
+}
+.form-group{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+}
+.form-group>input{
+    width: 25rem;
+    margin-left: 3rem;
+}
+.radio_container:nth-child(2){
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-rows: auto auto auto;
+}
+#satnica_container{
+   /* display: flex;
+   flex-direction: row; */
+}
+#selected{
+    color: rgb(208, 244, 255);
+    border-bottom: dashed white;
+}
+.satnica_label{
+    margin-left: 3rem;
+}
+.predmet_label{
+    margin-bottom: 1rem;
+}
+
+/* .active{color:black} */
+.predmet{
+    display: flex;
+    position: relative;
+    margin-top: -1.7rem;
+    margin-left: 14rem;
+    width: 5.5rem;
+    cursor: pointer;
+}
+#satnica_container{
+    display: flex;
+    width: 1.5rem;
+}
+.satnica{
+    position: absolute;
+    /* display: flex; */
+    margin-top: 0.5rem;
+    margin-left: -3rem;
+    /* transform: scale(1.2); */
+    /* height: 2rem; */
+    width: 4rem;
+    opacity: 0;
+    /* opacity: 0.2; */
+    cursor: pointer;
+}
+.radio_container{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#datum_container{
+    display: flex;
+    flex-direction: column;
+}
+#datum{
+    background-color: transparent;
+    border: none;
+    color: white;    
+}
+h3{
+    /* background: linear-gradient(to right, #df6a0b, #fd9916); */
+    border-left: 1rem solid #f7f4f2 ;
+    border-right: 1rem solid  #c8dbf8;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    font-size: 2.3rem;
+}
+.radio_container:nth-child(2) h3{
+    width: 23rem;
+}
+#main_wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.btn{
+    background: linear-gradient(to right, #df6a0b, #fd9916);
+    color: #fff;
+    color: white;
+    position: relative;
+    z-index: 5;
+    animation: gradient 2.5s ease infinite;
+    background-size: 300% 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px rgb(126, 126, 126);
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+    margin-top: 3rem;
+    letter-spacing: 2px;
+}

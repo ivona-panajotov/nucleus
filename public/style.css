@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+html,body{
+    overflow-x: hidden ;
+    background-color: #434f56;
+    padding: 0;
+    height: 250vh;
+    /* width: 100vw; */
+}
+footer{
+ margin-top: 1.7rem;
+}
+#cat{
+  position: absolute;
+  margin-left: 45rem;
+  margin-top: 7rem;
+  width: 40rem;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+background: white !important;
+}
+.navbar{
+  position: absolute;
+  z-index: 5;
+}
+a.nav-link{
+    color: rgb(184, 253, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+a.nav-link:hover{
+  color: rgb(213, 252, 255);
+}
+.navbar-nav{
+    /* margin-left: 20rem; */
+  margin-left: 11rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bungee', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.nav-item{
+    margin-left: 1.5rem;
+    
+}
+#shadow{
+    z-index: 2;
+    background: rgb(30,38,43);
+    background: linear-gradient(180deg, rgba(30,38,43,1) 0%, rgba(30,38,43,1) 33%,rgb(72, 84, 92) 100%);
+    width: 100vw;
+    height: 50rem;
+}
+@keyframes gradient { 
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  #banner-content{
+    position: absolute;
+    margin-top: -30rem;
+    margin-left: 10rem;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  #banner-content>h1{
+    color: rgb(213, 255, 185);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  #banner-content>p{
+    font-family: 'Mochiy Pop P One';
+  }
+#zakazi{
+    background: linear-gradient(to right, #53df47,#1eabbe, #165ffd);
+    color: #fff;
+    color: white;
+    position: relative;
+    z-index: 5;
+    margin-left: 10rem;
+    width: 11rem;
+    height: 3.5rem;
+    margin-top: -5rem;
+    border-radius: 10%;
+    animation: gradient 2.5s ease infinite;
+    background-size: 200% 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px rgb(126, 126, 126);
+    font-family: 'Titillium Web', sans-serif;
+}
+#text{
+    color: white;
+    width:30rem;
+    z-index: 15;
+    position: absolute;
+    margin-top: -20rem;
+    margin-left: 10rem;
+    border-left: 1rem solid #00c3ff;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+#img1{
+  position: absolute;
+  margin-top: -35rem;
+  margin-left: 50rem;
+}
+.zakazi-div{
+    z-index: 10;
+    margin-top: -10rem;
+}
+
+.animation_div{
+  text-transform: uppercase;
+  width: 25rem;
+  height: 10rem;
+  background-color: white;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: bold;
+  letter-spacing: -3px;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+.animation_div:hover{
+transform: scale(1.1);
+transition: transform 1s;
+
+}
+  .slide2 .animation_div1{
+  
+    /* position: absolute; */
+    margin-top: 2rem;
+    margin-left: -20rem;
+  }
+.slide2 .animation_div2{
+  margin-top: 10rem;
+  margin-left: 91rem;
+  writing-mode: vertical-lr;
+
+}
+.nucleus-text{
+    border-top: 2px solid rgb(212, 212, 212);
+    height: 80vh;
+    width: 80rem;
+    margin: auto;
+    margin-top: 5rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+.nucleus-text>h1{
+    margin-top: 2rem;
+    margin-left: 10rem;
+    border-left: 1rem solid #77bd8e;
+    border-right: 1rem solid #77bd8e;
+    width: 20.7rem;
+    padding-left: 1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.nucleus-text>div{
+    /* margin-top: 5rem; */
+    margin-left: 10rem;
+}
+.nucleus-text>div>p{
+    width: 45rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.lastSlide{
+  height: 50vh;
+}
+.logo{
+    width: 10rem;
+    position: absolute;
+    z-index: 10;
+    margin-left: 80rem;
+}
+.nucleus-text>.gallery-container{
+  display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 1rem;
+}
+.nucleus-text>.gallery-container>.gallery{
+    margin-top: 1rem;
+}
+.nucleus-text>.gallery-container>.gallery>img{
+    width: 15rem;
+}
+
+
+/* radio btn */
+.wrapper {
+    margin: 100px 0;
+  }
+  .toggle_radio{
+    position: relative;
+    background: rgb(255, 200, 184);
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    height: 32px;
+    width: 410px;
+  }
+  .toggle_radio > * {
+    float: left;
+  }
+  .toggle_radio input[type=radio]{
+    display: none;
+    width: 1rem;
+    /*position: fixed;*/
+  }
+  .toggle_radio label{
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font: 1rem "Fira Sans";
+    color: rgba(0, 0, 0, 0.9);
+    z-index: 0;
+    display: block;
+    width: 122px;
+    height: 20px;
+    margin: 3px 3px;
+    padding-left: 5px;
+    padding-top: 2px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    /*background: rgba(0,0,0,.1);*/
+    text-align: center;
+    /*margin: 0 2px;*/
+    /*background: blue;*/ /*make it blue*/
+  }
+  .toggle_option_slider{
+    /*display: none;*/
+    /*background: red;*/
+    margin-left: 1rem;
+    width: 140px;
+    height: 60px;
+    position: absolute;
+    top: 1px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  
+  #first_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: -3px;
+  }
+  #second_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 109px;
+  }
+  #third_toggle:checked ~ .toggle_option_slider{
+    background: rgba(255,255,255,.3);
+    left: 225px;
+
+  }
+  .disableBtn{
+    pointer-events: none;
+    color: gray;
+  }
+
+/* #form{
+  background: linear-gradient(to right, #df6a0b, #fd9916);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: 3rem;
+  border: none;
+  border-radius: 2%;
+}
+#form>.form-group>input[type=text]{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#form>.form-group>label:nth-child(1){
+  display: flex;
+  justify-content: center;
+} */
+#particles-js{
+  position: absolute;
+  width: 100vw;
+  height: 47rem;
+
+}

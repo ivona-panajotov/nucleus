@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+form>h1{
+margin-top: -7rem;
+text-align: center;
+z-index: 10;
+font-weight: bold;
+color: #689977;
+font-family: 'ubuntu';
+}
+/* nav{
+    background-color: #E8E7F7 !important;
+    z-index: 10;
+} */
+form{
+    width: 75%;
+    padding-top: 10rem;
+    margin-top:7%;
+    z-index: 10;
+    display: grid;
+    height: 30rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center !important;
+    /* background-color: aliceblue; */
+    background: radial-gradient(ellipse farthest-corner at right bottom, #e8f1f3 0%, #dddcdb 8%, #c4cfd6 30%, #b5c2ce 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #d3dcf0 8%, #b7c3d3 25%, #c2c4c7 62.5%, #9facb6 100%);
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+
+form>input{
+    z-index: 10;
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sledeca_str{
+    width: 10rem;
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+padding-top: 0.2rem;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 1.3rem;
+background-color: #699777;
+width: 15rem;
+height: 3rem;
+border-radius: 2%;
+}
+.sledeca_str:hover{
+    color: rgb(255, 242, 242);
+}
+body,html{
+    height: 100vh !important;
+
+}
+.bubbles{
+    animation: sway1 6s infinite;
+   transform-origin: 50% 100% 0;
+-webkit-box-shadow:0px 0px 206px 96px rgb(242, 243, 221);/*3rd value 172*/
+-moz-box-shadow: 0px 0px 206px 96px rgb(228, 228, 226);/*3rd value 172*/
+box-shadow: 0px 0px 206px 96px rgb(230, 230, 230);/*4th value 155*/
+ border:none;
+ border-radius: 50%;
+ position: absolute;
+ background-color: rgba(255, 255, 255, 0.664)!important;
+ z-index:1;
+}
+@keyframes sway1 {
+    0%, 100%{ transform: rotate(-8deg);}
+    50%{ transform: rotate(8deg); }
+}
+#footer_container{
+   margin-top: 7.5rem;
+}
+#ui-datepicker-div{
+    z-index: 50 !important;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+#txtDate{
+    border: 2px solid #93d8a8;
+    background-color: #cecece;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    cursor: pointer;
+}

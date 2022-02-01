@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap");
+
+html,
+body {
+  height: 100vh !important;
+  font-family: "ubuntu";
+  font-weight: 400;
+  background: linear-gradient(45deg,#B7D3E6,rgb(104, 126, 99));
+
+}
+footer {
+  margin-top: 10rem;
+}
+main {
+  margin-top: 10rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aliceblue;
+  padding: 5rem;
+}
+nav {
+  background-color: #e8e7f7 !important;
+}
+main > h1,
+h2 {
+  font-family: "roboto";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body > h1 {
+  margin: 5rem;
+  text-transform: uppercase;
+  border-left: 1.3rem solid #fd9916 !important;
+  border-bottom: 1rem solid #df6a0b !important;
+  width: 25rem;
+  padding-left: 2rem;
+}

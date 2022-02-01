@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../zakazi.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Zakazi cas</title>
+  
+</head>
+<body>
+  <%-include('../include/navbar.html')%>
+
+  <div id="bubble_container"></div>
+  <form action="POST" class="form shadow-lg">
+    <h1>Prvo,izaberi datum koji ti najvise odgovara.
+      Na osnovu datuma,pikazacemo ti slobodne termine</h1>
+    <input type="text" placeholder="Kalendar" readonly autocomplete="off" name="datum" id="txtDate">
+  <a id="output"></a>
+  </form>
+  
+        <%#console.log(flattened)%>
+        <%#dataParsed.forEach(main=>{%>
+          <%#let sve_satnice=flattened.map(e=>e.time)%>
+          <%#for(let satnica of sve_satnice){%>
+          <!-- <label for="satnica"><%#=satnica%></label>
+          <input type="radio" name="satnica" class="satnica" value=<%#=satnica%>> -->
+          <%#}%>
+              <%#})%>
+    
+
+        <%#})%>
+  </form>
+ <div id="footer_container">
+  <%-include('../include/footer.html')%>
+ </div>
+  <script src="https://github.com/mde/ejs/releases/download/v3.0.2/ejs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+   $( "#txtDate" ).datepicker({ 
+     dateFormat: 'yy-mm-dd',
+   minDate:0,
+   onSelect:(date)=>{
+     $('#output').text('Sledeca selekcija')
+     $('#output').attr('href',`/zakazi/cas/${date}`)
+    $('#output').addClass('sledeca_str')
+   }
+   })
+ 
+ class Bubble{
+   constructor(height,width,x,y){
+    this.height=height
+    this.width=width
+    this.x=x
+    this.y=y
+     let bubble=document.createElement('div')
+            bubble.style.width=`${width}rem`
+            bubble.style.height=`${height}rem`
+            bubble.style.top=`${y}rem`
+            bubble.style.left=`${x}rem`
+            bubble.classList.add('bubbles')
+         $('#bubble_container').append(bubble)
+         let home=document.querySelector('#bubble_container')
+   }
+ }
+ const bubble1= new Bubble(5,5,63,30)
+      const bubble2= new Bubble(7,7,10,10)
+      const bubble3= new Bubble(4,4,30,20)//top 50 maybe
+      const bubble7= new Bubble(5,5,10,30)//top 50 maybe
+      const bubble4= new Bubble(3.5,3.5,79,33)
+      const bubble5= new Bubble(4,4,73,15)
+      const bubble6= new Bubble(3.5,3.5,50,35)
+</script>
+</body>
+</html>

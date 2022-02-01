@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+footer{
+    margin-top: 12rem;
+}
+iframe{
+    margin: 5rem;
+    margin-left: 10rem;
+    border-left: 1.3rem solid #df6a0b !important;
+    padding-left: 3rem;
+}
+#kontakt_container{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #B7D3E6 ;
+  width: 80%;
+  margin-left: 10rem;
+  margin-top: 5rem;
+
+}
+#info{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 10rem;
+    border-right: 1rem solid #fd9916 !important;
+    margin-right: 10rem;
+    height: 10rem;
+}
