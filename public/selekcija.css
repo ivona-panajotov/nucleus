@@ -1,6 +1,8 @@
-body{
-    font-size: 1.3rem
+body,html{
+    height: 149vh !important;
+    /* font-size: 1.3rem */
 }
+.navbar{position: static !important; }
 form{
     margin: 5rem;
     padding: 3rem;
@@ -93,7 +95,7 @@ h3{
     grid-template-columns: auto auto auto;
 }
 .btn{
-    background: linear-gradient(to right, #df6a0b, #fd9916);
+    background: linear-gradient(to right, #b7b1d3, #7ecbe9);
     color: #fff;
     color: white;
     position: relative;

@@ -5,22 +5,33 @@ body {
   height: 100vh !important;
   font-family: "ubuntu";
   font-weight: 400;
-  background: linear-gradient(45deg,#B7D3E6,rgb(104, 126, 99));
+  background: linear-gradient(45deg,#696969,rgb(73, 73, 73));
 
 }
 footer {
   margin-top: 10rem;
 }
+#border1{
+  width: 1rem;
+  background-color: rgb(213, 255, 185) ;
+  height: 3rem;
+  margin: -3.5rem 0 0 10rem;
+  /* position: absolute; */
+}
+#border2{
+  width: 0rem;
+  background-color: rgb(141, 167, 124) ;
+  height: 1rem;
+  margin: -1rem 0 0 10rem;
+  /* position: absolute; */
+}
 main {
-  margin-top: 10rem;
+  margin-top: 5rem;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   background-color: aliceblue;
   padding: 5rem;
-}
-nav {
-  background-color: #e8e7f7 !important;
 }
 main > h1,
 h2 {
@@ -29,10 +40,13 @@ h2 {
   font-weight: bold;
 }
 body > h1 {
-  margin: 5rem;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  color: rgb(255, 255, 255);
+  /* margin: 5rem; */
   text-transform: uppercase;
-  border-left: 1.3rem solid #fd9916 !important;
-  border-bottom: 1rem solid #df6a0b !important;
+  /* border-left: 1.3rem solid #fd9916 !important;
+  border-bottom: 1rem solid #df6a0b !important; */
   width: 25rem;
   padding-left: 2rem;
 }

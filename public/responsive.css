@@ -1,0 +1,51 @@
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #banner-content{
+        width: 20rem;
+    }
+    #cat{
+        margin-top: 10rem;
+        margin-left: 33rem;
+        width: 30rem;
+        height: auto;
+    }
+    .blob{
+        width: 40rem;
+    }
+    .online_img{
+        width: 30rem;
+        margin-left: -1rem;
+    }
+    .section_text{
+        width: 30rem;
+        margin-left: 30rem;
+    }
+    #border{
+        margin-left: 20rem;
+        margin-top: 83rem;
+    }
+    .navbar-nav{
+        font-size: 1.57rem;
+        margin: 0;
+    }
+    .nucleus-text{
+        width: 60rem;
+    }
+    .nucleus-text>div{
+        margin: 0;
+        width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nucleus-text>.gallery-container>.gallery>img{
+        width: 70%;
+        height: auto;
+    }
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }

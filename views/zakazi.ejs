@@ -14,11 +14,11 @@
 </head>
 <body>
   <%-include('../include/navbar.html')%>
-
+  <h1 class="shadow-lg">Prvo,izaberi datum koji ti najvise odgovara.
+    Na osnovu datuma,pikazacemo ti slobodne termine</h1>
   <div id="bubble_container"></div>
-  <form action="POST" class="form shadow-lg">
-    <h1>Prvo,izaberi datum koji ti najvise odgovara.
-      Na osnovu datuma,pikazacemo ti slobodne termine</h1>
+  <form action="POST" class="form">
+    
     <input type="text" placeholder="Kalendar" readonly autocomplete="off" name="datum" id="txtDate">
   <a id="output"></a>
   </form>
@@ -43,6 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../viber.js"></script>
 <script>
 
    $( "#txtDate" ).datepicker({ 

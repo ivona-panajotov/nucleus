@@ -11,9 +11,12 @@
 </head>
 <body style="background-color:#B2D2E7;">
     <%-include('../include/navbar.html')%>
-    <h1>nešto o nama...</h1>
+    <h1 id="onama">nešto o nama...</h1>
+    <div id="border1"></div>
+    <div id="border2"></div>
+
     <main class="shadow-lg">
-        <h1 style="    border-left: 1rem solid #fd9916">šta nudi nucleus?</h1>
+        <h1 style="    border-left: 1rem solid #feffc3">šta nudi nucleus?</h1>
         <p>
            <b> NUCLEUS</b> nudi časove osnovcima i srednjoškolcima svih uzrasta.
 
@@ -31,5 +34,14 @@ Radimo i pripremu dece za IT, računarsku i matemaričku gimnaziju.
     <%-include('../include/footer.html')%>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(window).on('load',()=>{
+    // $('#border1').animate({height:3+'rem'},1200)
+    $('#border2').animate({width:20+'rem'},1700)
+
+})
+</script>
 </body>
 </html>

@@ -4,13 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 html,body{
     overflow-x: hidden ;
-    background-color: #434f56;
+    background-color: #47535B;
     padding: 0;
-    height: 250vh;
+    height:309vh;
     /* width: 100vw; */
 }
 footer{
- margin-top: 1.7rem;
+ margin-top: 5rem;
+ background-color: rgb(213, 255, 185)  !important;
+
 }
 #cat{
   position: absolute;
@@ -22,15 +24,29 @@ footer{
 background: white !important;
 }
 .navbar{
-  position: absolute;
-  z-index: 5;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 200ms linear;
+}
+.navbar.scrolled {
+  background-color: rgb(243, 231, 192) !important;
+  transition: background-color 200ms linear;
+}
+a.nav-link.scrolled{
+  color: rgb(96, 149, 151);
+  transition: color 200ms linear;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
+
 }
 a.nav-link{
     color: rgb(184, 253, 255);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 a.nav-link:hover{
-  color: rgb(213, 252, 255);
+  color: rgb(77, 123, 126);
 }
 .navbar-nav{
     /* margin-left: 20rem; */
@@ -107,47 +123,86 @@ a.nav-link:hover{
   margin-top: -35rem;
   margin-left: 50rem;
 }
+.section_text{
+  position: absolute;
+  color: white;
+  margin-top: 60rem;
+  width: 37rem;
+  margin-left: 53rem;
+  z-index: 20;
+  opacity: 0;
+  font-size: 1.2rem;
+}
+.online_img{
+  position: absolute;
+  margin-top: 55rem;
+  margin-left: 10rem;
+  transform: scaleX(-1);
+}
 .zakazi-div{
     z-index: 10;
     margin-top: -10rem;
 }
-
+.blob{
+  position: absolute;
+  margin-top: 52rem;
+  width:50rem;
+  margin-left: -12rem;
+}
+#border{
+  margin-top: 77rem;
+  margin-left: 50rem;
+  position: absolute;
+  background-color: white;
+  width: 0px;
+  height: 0.5rem;
+}
 .animation_div{
-  text-transform: uppercase;
   width: 25rem;
   height: 10rem;
-  background-color: white;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   font-weight: bold;
-  letter-spacing: -3px;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    font-size: 1.2rem;
+    padding: 2rem;
 }
 .animation_div:hover{
 transform: scale(1.1);
 transition: transform 1s;
 
 }
-  .slide2 .animation_div1{
-  
-    /* position: absolute; */
-    margin-top: 2rem;
-    margin-left: -20rem;
-  }
-.slide2 .animation_div2{
-  margin-top: 10rem;
-  margin-left: 91rem;
-  writing-mode: vertical-lr;
-
+#center_div{
+  background-color: rgb(252, 247, 220);
+  width: 30rem;
+  height: 30rem;
+  left: 0; 
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  margin-top: 60rem;
+  margin-bottom: auto;
+  margin-left: auto; 
+  margin-right: auto;
+  padding: 2rem; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: absolute;
 }
+  #section .animation_div1{
+    background-color: rgb(255, 224, 224);
+    margin-left: -20rem;
+    height: 25rem;
+  }
+  #section{
+    position: absolute;
+  top: 0;
+  left: 0;
+  
+  }
+
 .nucleus-text{
     border-top: 2px solid rgb(212, 212, 212);
     height: 80vh;
     width: 80rem;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 50rem;
     overflow: hidden;
     background-color: white;
 }
