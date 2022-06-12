@@ -28,7 +28,7 @@
     </div>
     <div class="wrapper">
       <div class="toggle_radio">
-        <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option" value="Osnovna">
+        <input type="radio"  class="toggle_option" id="first_toggle" name="toggle_option" value="Osnovna">
         <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option" value="Srednja">
         <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option" value="Fakultet">
         <label for="first_toggle"><p>Osnovna</p></label>
@@ -41,61 +41,58 @@
       <div id="main_wrapper">
       <div class="radio_container">
         <h3>Izaberi predmet</h3>
-        <label for="predmet" class="predmet_label">Matematika</label>
-        <input type="radio" name="predmet" value='Matematika' class="predmet">
-        <label for="predmet" class="predmet_label">Fizika</label>
-        <input type="radio" name="predmet" value='Fizika' class="predmet">
-        <label for="predmet" class="predmet_label">Hemija</label>
+        <label for="predmet" class="predmet_label">Matematika
+        <input  type="radio" required name="predmet" value='Matematika' class="predmet">
+      </label>
+        <label for="predmet" class="predmet_label">Fizika
+        <input type="radio" required name="predmet" value='Fizika' class="predmet">
+      </label>
+        <label for="predmet" required class="predmet_label">Hemija
         <input type="radio" name="predmet" value='Hemija' class="predmet">
-        <label for="predmet" class="predmet_label">Srpski</label>
+      </label>
+        <label for="predmet" required class="predmet_label">Srpski
         <input type="radio" name="predmet" value='Srpski' class="predmet">
+      </label>
       </div>
       <div class="radio_container">
         <h3>Izaberi profesora</h3>
         <div id="mat" class="profesori" style="display: none;">
         <label for="profesor">Osoba1</label>
-        <input type="radio" name="profesor" value='Osoba1' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba1' class="profesor">
         <label for="profesor">Osoba2</label>
-        <input type="radio" name="profesor" value='Osoba2' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba2' class="profesor">
         <label for="profesor">Osoba3</label>
-        <input type="radio" name="profesor" value='Osoba3' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba3' class="profesor">
         <label for="profesor">Osoba4</label>
-        <input type="radio" name="profesor" value='Osoba4' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba4' class="profesor">
       </div>
       <div id="fiz" class="profesori" style="display: none;">
         <label for="profesor">Osoba5</label>
-        <input type="radio" name="profesor" value='Osoba5' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba5' class="profesor">
         <label for="profesor">Osoba6</label>
-        <input type="radio" name="profesor" value='Osoba6' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba6' class="profesor">
         <label for="profesor">Osoba7</label>
-        <input type="radio" name="profesor" value='Osoba7' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba7' class="profesor">
         <label for="profesor">Osoba8</label>
-        <input type="radio" name="profesor" value='Osoba8' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba8' class="profesor">
       </div>
         <div id="hem" class="profesori" style="display: none;">
         <label for="profesor">Osoba9</label>
-        <input type="radio" name="profesor" value='Osoba9' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba9' class="profesor">
         <label for="profesor">Osoba10</label>
-        <input type="radio" name="profesor" value='Osoba10' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba10' class="profesor">
         <label for="profesor">Osoba11</label>
-        <input type="radio" name="profesor" value='Osoba11' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba11' class="profesor">
         <label for="profesor">Osoba12</label>
-        <input type="radio" name="profesor" value='Osoba12' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba12' class="profesor">
       </div>
       <div id="srp" class="profesori" style="display: none;">
         <label for="profesor">Osob13</label>
-        <input type="radio" name="profesor" value='Osoba13' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba13' class="profesor">
         <label for="profesor">Osoba14</label>
-        <input type="radio" name="profesor" value='Osoba14' class="profesor">
+        <input type="radio" required name="profesor" value='Osoba14' class="profesor">
       </div>
       </div>
-      <!-- <div class="radio_container">
-        <h3>Izaberi nacin odrzavanja casa</h3>
-        <label for="vrsta">Zoom</label>
-      <input type="radio" name="vrsta" value='Zoom' id="zoom">
-      <label for="vrsta">Uzivo</label>
-        <input type="radio" name="vrsta" value='Uzivo' id="uzivo">
-      </div> -->
       <br>
       <div style="text-align: center; "><h3 style="text-align: center;">Slobodni termini</h3>      </div>
     </div>
@@ -111,7 +108,7 @@
   <%#console.log(filtriran_arr)%>
 
   <%for(let satnice of filtriran_arr){%>
-  <span class="satnica_label"><%=satnice%>    <input type="radio" name="satnica" class="satnica" value=<%=satnice%>>
+  <span class="satnica_label"><%=satnice%>    <input type="radio" required name="satnica" class="satnica" value=<%=satnice%>>
   </span>
   <%}%>
 </div>
@@ -126,19 +123,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 let radios=document.getElementsByName('predmet')
-let allLabels=document.getElementsByTagName('label')
-for(let label of allLabels){
-  $(label).bind('click', function(){
-   // remove the active class if it's there
-   if($("label.active").length) $("li.active").removeClass('active');
-   // add teh active class to the clicked element
-   $(this).addClass('active');
-}); 
-}
-let zakazi=document.getElementById('form')
-zakazi.onsubmit=()=> {return alert('Cas zakazan')}
-let satnicaLabel=document.getElementsByClassName('satnica_label')
 
+let zakazi=document.getElementById('form')
+// zakazi.onsubmit=()=> {return alert('Cas zakazan')}
+let satnicaLabel=document.getElementsByClassName('satnica_label')
+let predmetiLabel=document.getElementsByClassName('predmet_label')
 for(let sat of satnicaLabel){
   sat.onclick=(e)=>{
     console.log(e.target)
@@ -146,7 +135,14 @@ for(let sat of satnicaLabel){
       $(sat).attr('id','selected').siblings().removeAttr('id','selected')
     }
   }
-
+}
+for(let predmet of predmetiLabel){
+  predmet.onclick=(e)=>{
+    console.log(e.target)
+    if(e.target.checked){
+      $(predmet).attr('id','selected2').siblings().removeAttr('id','selected2')
+    }
+  }
 }
 for(let radio of radios){
 radio.onclick=()=>{

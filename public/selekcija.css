@@ -1,5 +1,5 @@
 body,html{
-    height: 149vh !important;
+    height: 165vh !important;
     /* font-size: 1.3rem */
 }
 .navbar{position: static !important; }
@@ -32,21 +32,33 @@ form{
     color: rgb(208, 244, 255);
     border-bottom: dashed white;
 }
+#selected2{
+    color: rgb(208, 244, 255);
+    width: 10rem;
+    margin-left: 11rem;
+    display: block;
+    border-bottom: dashed white;
+    /* position: absolute; */
+}
 .satnica_label{
     margin-left: 3rem;
 }
 .predmet_label{
     margin-bottom: 1rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
 }
 
 /* .active{color:black} */
 .predmet{
     display: flex;
     position: relative;
-    margin-top: -1.7rem;
-    margin-left: 14rem;
+    margin-top: -1rem;
+    margin-left: 13rem;
     width: 5.5rem;
     cursor: pointer;
+    opacity: 0;
 }
 #satnica_container{
     display: flex;

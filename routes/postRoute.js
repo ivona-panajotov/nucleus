@@ -1,14 +1,12 @@
 const express=require('express')
 const mysql = require("mysql");
-let { Scheduler } = require("@ssense/sscheduler");
-const scheduler = new Scheduler();
 const router=express.Router()
 
 let con = mysql.createConnection({
   host: "localhost",
   user: "root",
   passsword: "root",
-  database: "mydb",
+  database: "nucleus",
 });
 let date = new Date();
 let dateToday = date.toLocaleDateString();
@@ -16,20 +14,7 @@ let dateToday = date.toLocaleDateString();
 //   `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate() + 1}`
 // );
 let raspored=['09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00']
- let availability = scheduler.getAvailability({
-        from: date,
-        to: `${date.getFullYear()}-${date.getMonth() + 1}-${
-          date.getDate() + 1
-        }`,
-        duration: 60,
-        interval: 60,
-        schedule: {
-          weekdays: {
-            from: "09:00",
-            to: "21:00",
-          }
-        },
-      });
+
 // const getIndex=require('../controllers/postController')
 router.get("/zakazi", (req, res) => {
 let sql = "SELECT satnica,datum,zauzeto FROM ucenici";
