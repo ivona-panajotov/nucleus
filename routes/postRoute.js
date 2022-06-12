@@ -56,42 +56,6 @@ router.post("/zakazi/cas", (req, res) => {
   // let arr = Object.values(availability)[0];
   let zauzeto=false
   console.log(satnica)
-
-  // for (let i = 0; i < arr.length; i++) {
-    // let satnice2 = Object.values(arr[i]);
-    //  console.log(satnice2)
-    // console.log(Number(satnice2[0][0]),Number(satnice2[0][1])+1)
-    // console.log(`from: ${satnice2[0]} ,  to: ${Number(satnice2[0][0])}${Number(satnice2[0][1])+1}:00`)
-    // if (satnice2[0] == satnica) {
-    //    zauzeto=true
-    //  availability=scheduler.getAvailability({
-    //     from: date,
-    //     to: `${date.getFullYear()}-${date.getMonth() + 1}-${ date.getDate() + 1}`,
-    //     duration: 60,
-    //     interval: 60,
-    //     schedule: {
-    //       weekdays: {
-    //         from: "09:00",
-    //         to: "21:00",
-    //         unavailability: [
-    //           //`${Number(satnice2[0][0])}${Number(satnice2[0][1])+1}:00`
-    //           { from: `${satnice2[0]}`, to: check() },
-    //         ],
-    //       },
-    //     },
-    //   });
-  // function check(){
-  //   if(Number(satnice2[0][0]==1)){
-  //     return '10:00'
-  //   }
-  //   else if(Number(satnice2[0][1])+1==10){
-  //     return '20:00'
-  //   }
-  //   else if(Number(satnice2[0][0]==2)){
-  //     return '21:00'
-  //   }
-  // }
-  // let final = converted.toLocaleDateString();
   raspored.forEach(e=>{
     if(e==satnica){
       zauzeto=true
